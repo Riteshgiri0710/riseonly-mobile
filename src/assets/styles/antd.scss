@@ -1,0 +1,280 @@
+.ant-select-selection-overflow {
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+    margin-right: 5px !important;
+    flex-wrap: nowrap !important;
+
+    &::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #ff8a00 !important;
+        border-radius: 10px;
+        border: 1px solid #1c0808;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 1px;
+    }
+}
+
+.ant-select-selector {
+    flex-wrap: nowrap !important;
+}
+
+.ant-modal-close-icon {
+    color: white !important;
+}
+
+.ant-modal-content {
+    padding: 20px !important;
+}
+
+.friendlist-scrolldiv {
+    overflow-y: auto;
+    max-height: 400px;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #ff8a00;
+        border-radius: 10px;
+        border: 2px solid #1c0808;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 5px;
+    }
+}
+
+.epr-body {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #ff8a00;
+        border-radius: 10px;
+        border: 2px solid #1c0808;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 5px;
+    }
+}
+
+.ant-picker-header {
+    * {
+        color: white !important;
+    }
+}
+
+.ant-select-dropdown {
+    background: #1f1f1f !important;
+}
+
+.ant-space-item {
+    height: 100%;
+}
+
+.rc-virtual-list-scrollbar-thumb {
+    background-color: #ff8a00 !important;
+}
+
+.settings-selector {
+    .ant-select-selector {
+        min-height: 45px !important;
+        border-radius: 10px !important;
+        background: rgb(57, 57, 57) !important;
+        border: none !important;
+
+        &:hover {
+            border: none !important;
+        }
+
+        .ant-select-selection-overflow {
+            padding: 0px 5px !important;
+
+            .ant-select-selection-overflow-item {
+                .ant-select-selection-item {
+                    background: rgb(0, 0, 0) !important;
+                }
+            }
+        }
+    }
+}
+
+.settings-person-select {
+    .ant-select-selector {
+        height: 45px !important;
+        border-radius: 10px !important;
+        background: rgb(57, 57, 57) !important;
+        border: none !important;
+
+        &:hover {
+            border: none !important;
+        }
+
+        .ant-select-selection-overflow {
+            padding: 0px 5px !important;
+
+            .ant-select-selection-overflow-item {
+                .ant-select-selection-item {
+                    background: rgb(0, 0, 0) !important;
+                }
+            }
+        }
+    }
+}
+
+.sign-selector {
+    .ant-select-selector {
+        background: #2d2d2d !important;
+        border: 1px solid #3b3b3b !important;
+        border-radius: 10px !important;
+
+        &:hover {
+            border: 1px solid #3b3b3b !important;
+        }
+
+        .ant-select-selection-placeholder {
+            color: #bababa !important;
+        }
+
+        .ant-select-selection-overflow {
+            padding: 0px 5px !important;
+
+            .ant-select-selection-overflow-item {
+                .ant-select-selection-item {
+                    background: rgb(0, 0, 0) !important;
+                }
+            }
+        }
+    }
+}
+
+.privacy-settings {
+    .ant-select-selector {
+        background: rgb(57, 57, 57) !important;
+        border: none !important;
+
+        &:hover {
+            border: none !important;
+        }
+
+        .ant-select-selection-placeholder {
+            color: #bababa !important;
+        }
+
+        .ant-select-selection-overflow {
+            padding: 0px 5px !important;
+
+            .ant-select-selection-overflow-item {
+                .ant-select-selection-item {
+                    background: rgb(0, 0, 0) !important;
+                }
+            }
+        }
+    }
+}
+
+.ant-empty-description {
+    color: white !important;
+}
+
+.ant-select-selection-overflow {
+    height: 100% !important;
+}
+
+.rc-virtual-list-scrollbar-thumb {
+    width: 50% !important;
+}
+
+.rc-virtual-list-scrollbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ant-modal-footer {
+    margin-top: 0 !important;
+}
+
+.slider-antd {
+    margin: 0 !important;
+}
+
+.ant-checkbox-wrapper {
+    &:hover {
+        .ant-checkbox-inner {
+            border: 1px solid #ff7c03 !important;
+        }
+    }
+    .ant-checkbox {
+        .ant-checkbox-inner {
+            border-radius: 50% !important;
+            width: 20px !important;
+            height: 20px !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+
+            &::after {
+                left: 50% !important;
+                width: 6px !important;
+                inset-inline-start: 30% !important;
+            }
+        }
+    }
+
+    .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: #ff7c03 !important;
+        border-color: #ff7c03 !important;
+    }
+}
+
+// .ant-select-selector .ant-select-selection-placeholder {
+//     color: var(--select-placeholder) !important;
+// }
+
+.ant-picker {
+    border: var(--antd-datepicker-border) !important;
+}
+
+[data-rsbs-footer] {
+    padding: 0 !important;
+}
+
+.tiptap p.is-editor-empty:first-child::before {
+    color: #adb5bd;
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+}
+
+[data-rsbs-scroll] {
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--scroll-color);
+        border-radius: 10px;
+        border: 2px solid var(--scroll-other-color);
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 5px;
+    }
+}

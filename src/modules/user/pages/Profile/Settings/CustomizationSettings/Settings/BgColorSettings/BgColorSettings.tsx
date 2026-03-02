@@ -1,0 +1,70 @@
+import { CustomizationPreviewContent } from '@config/tsx';
+import { Box, ButtonUi, MainText, SimpleButtonUi } from '@core/ui';
+import { ProfileSettingsWrapper } from '@widgets/wrappers';
+import { observer } from "mobx-react-lite";
+import { useTranslation } from 'react-i18next';
+import { StyleSheet } from 'react-native';
+import { themeStore } from 'src/modules/theme/stores';
+
+export const BgColorSettings = observer(() => {
+	const {
+		colorBottomSheet: { setColorBottomSheet },
+		currentTheme,
+		changeToDefault
+	} = themeStore;
+
+	const { t } = useTranslation();
+
+	return (
+		<ProfileSettingsWrapper
+			tKey='settings_bg_color'
+			height={45}
+		>
+			<Box
+				flex={1}
+				height={"100%"}
+				gap={15}
+			>
+				<Box>
+					<CustomizationPreviewContent t={t} s={s} />
+				</Box>
+
+				<Box
+					gap={5}
+					fD='row'
+				>
+					<SimpleButtonUi
+						style={s.btn}
+						height={35}
+						bRad={10}
+						bgColor={currentTheme.btn_bg_300}
+						onPress={() => changeToDefault()}
+					>
+						<MainText>
+							{t('return_text')}
+						</MainText>
+					</SimpleButtonUi>
+
+					<ButtonUi
+						onPress={() => setColorBottomSheet(true)}
+						height={35}
+						bRad={10}
+						style={{ ...s.btn }}
+					>
+						<MainText>
+							{t('edit_text')}
+						</MainText>
+					</ButtonUi>
+				</Box>
+			</Box>
+		</ProfileSettingsWrapper>
+	);
+});
+
+const s = StyleSheet.create({
+	btn: {
+		flex: 1,
+		alignItems: "center",
+		justifyContent: "center"
+	}
+});

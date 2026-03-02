@@ -1,0 +1,1 @@
+export type SearchEntity = 'USER' | 'POST' | 'POST_HASHTAG';

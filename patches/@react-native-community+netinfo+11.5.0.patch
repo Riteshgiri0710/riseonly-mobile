@@ -1,0 +1,12 @@
+diff --git a/node_modules/@react-native-community/netinfo/ios/RNCNetInfo.mm b/node_modules/@react-native-community/netinfo/ios/RNCNetInfo.mm
+--- a/node_modules/@react-native-community/netinfo/ios/RNCNetInfo.mm
++++ b/node_modules/@react-native-community/netinfo/ios/RNCNetInfo.mm
+@@ -99,7 +99,7 @@
+ 
+ #pragma mark - Public API
+ 
+-RCT_EXPORT_METHOD(getCurrentState:(nullable NSString *)requestedInterface resolve:(RCTPromiseResolveBlock)resolve
++RCT_EXPORT_METHOD(getCurrentState:(NSString *)requestedInterface resolve:(RCTPromiseResolveBlock)resolve
+                   reject:(__unused RCTPromiseRejectBlock)reject)
+ {
+   RNCConnectionState *state = [self.connectionStateWatcher currentState];

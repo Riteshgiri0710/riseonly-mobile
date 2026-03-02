@@ -1,0 +1,51 @@
+{
+  "originHash" : "1018297627d51b6a3c1075bf6c459a5f211d6f0c7d5922d8a4de74ab8b627549",
+  "pins" : [
+    {
+      "identity" : "basetoolbox",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lkzhao/BaseToolbox",
+      "state" : {
+        "revision" : "35e0d889ee2d8bf7bbc6169283efb330609d9638",
+        "version" : "0.7.1"
+      }
+    },
+    {
+      "identity" : "dynamictransition",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lkzhao/DynamicTransition.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "55f85918359034e1546cab1791a90975f62ea285"
+      }
+    },
+    {
+      "identity" : "motion",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/b3ll/Motion",
+      "state" : {
+        "revision" : "d0439dd8f31ef16c3e17ef12e8d1921b00341d67",
+        "version" : "0.1.5"
+      }
+    },
+    {
+      "identity" : "screencorners",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kylebshr/ScreenCorners",
+      "state" : {
+        "revision" : "1b71897c8d9091cad34bf10a47e3810c0c10e1e8",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "swift-numerics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-numerics",
+      "state" : {
+        "revision" : "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+        "version" : "1.1.1"
+      }
+    }
+  ],
+  "version" : 3
+}

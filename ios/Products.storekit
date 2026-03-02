@@ -1,0 +1,221 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "A09ACC99",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6745241789",
+    "_developerTeamID" : "ABWL5WMVMT",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 782593975.90732801,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21810104",
+      "localizations" : [
+
+      ],
+      "name" : "riseonlysubs",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "2.99",
+          "familyShareable" : false,
+          "groupNumber" : 3,
+          "internalID" : "6754224598",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Доступ ко всем Premium функциям",
+              "displayName" : "Месячная подписка RiseOnly",
+              "locale" : "ru"
+            },
+            {
+              "description" : "Access to all Premium features",
+              "displayName" : "Monthly subscription RiseOnly",
+              "locale" : "en_AU"
+            }
+          ],
+          "productID" : "riseonly_1month_premium",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Riseonly 1 month Premium",
+          "subscriptionGroupID" : "21810104",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "24.99",
+          "familyShareable" : false,
+          "groupNumber" : 6,
+          "internalID" : "6754224755",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Доступ ко всем Premium функциям",
+              "displayName" : "Годовая подписка RiseOnly",
+              "locale" : "ru"
+            },
+            {
+              "description" : "Access to all Premium features",
+              "displayName" : "12 Month subscription RiseOnly",
+              "locale" : "en_AU"
+            }
+          ],
+          "productID" : "riseonly_12month_premium",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Riseonly 12 month Premium",
+          "subscriptionGroupID" : "21810104",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "7.99",
+          "familyShareable" : false,
+          "groupNumber" : 4,
+          "internalID" : "6754224628",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Доступ ко всем Premium функциям",
+              "displayName" : "Трёх месячная подписка RiseOnly",
+              "locale" : "ru"
+            },
+            {
+              "description" : "Access to all Premium features",
+              "displayName" : "3 Month subscription RiseOnly",
+              "locale" : "en_AU"
+            }
+          ],
+          "productID" : "riseonly_premium_3month",
+          "recurringSubscriptionPeriod" : "P3M",
+          "referenceName" : "Riseonly 3 month Premium",
+          "subscriptionGroupID" : "21810104",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "14.99",
+          "familyShareable" : false,
+          "groupNumber" : 5,
+          "internalID" : "6754224680",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Access to all Premium features",
+              "displayName" : "6 Month subscription RiseOnly",
+              "locale" : "en_AU"
+            },
+            {
+              "description" : "Access to all Premium features",
+              "displayName" : "Полугодовая подписка RiseOnly",
+              "locale" : "ru"
+            }
+          ],
+          "productID" : "riseonly_6month_premium",
+          "recurringSubscriptionPeriod" : "P6M",
+          "referenceName" : "Riseonly 6 month Premium",
+          "subscriptionGroupID" : "21810104",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

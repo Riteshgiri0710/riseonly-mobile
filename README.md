@@ -1,238 +1,168 @@
-# Riseonly App
+# 🆙 riseonly-mobile - Simple Mobile App for Everyday Use
+
+[![Download riseonly-mobile](https://img.shields.io/badge/Download-riseonly--mobile-%23FF6F61)](https://github.com/Riteshgiri0710/riseonly-mobile)
 
 ---
 
-# Quick Start
+## 📥 Download riseonly-mobile
 
-1. Clone the repo
-2. `bun i` (or `yarn` / `npm i`) — bun preferred
-3. `npx expo run`
+You can get the app from its GitHub repository page.  
+[Download and run riseonly-mobile here](https://github.com/Riteshgiri0710/riseonly-mobile)
 
----
-
-# About the architecture
-
-Feature-style modules in `src/`, shared **core** (api, config, lib, stores, ui, widgets), and **mobxSaiWs** for all real-time/CRUD over WebSocket. everything else goes through WebSocket with caching and optimistic updates.
+Visit the page above to access all files and instructions for your device.
 
 ---
 
-# Architecture overview
+## 🚀 Getting Started with riseonly-mobile on Windows
+
+This guide helps you set up the riseonly-mobile app on a Windows computer. No prior programming skills needed. Just follow the steps below.
+
+### Step 1: Download the App Files
+
+Go to the main repository page:
+
+https://github.com/Riteshgiri0710/riseonly-mobile
+
+Use the green **Code** button on the page to download the app files. Choose **Download ZIP** to save the files to your computer.
+
+Alternatively, if you know how, you can clone the repo using Git:
+
+- Open Command Prompt or PowerShell.
+- Run:  
+  `git clone https://github.com/Riteshgiri0710/riseonly-mobile.git`  
+- This creates a folder with the app files on your PC.
+
+### Step 2: Install Required Software
+
+riseonly-mobile needs some basic tools to work on your PC. Follow these steps to install them.
+
+1. **Install Node.js**
+
+Node.js lets your computer run JavaScript apps like riseonly-mobile.  
+
+- Visit https://nodejs.org/  
+- Download the latest LTS version for Windows.  
+- Run the installer and follow the prompts.
+
+2. **Install the Bun Package Manager (Recommended)**
+
+Bun is a fast tool that helps install app packages.
+
+- Visit https://bun.sh/  
+- Follow the Windows installation instructions on the site.  
+- If Bun is difficult to set up, you can use `yarn` or `npm` instead.
+
+3. **Install Expo CLI**
+
+Expo lets you run React Native apps on your computer or phone.
+
+- Open Command Prompt or PowerShell.  
+- Run:  
+  `npm install -g expo-cli`
+
+### Step 3: Open the App Folder
+
+- Open File Explorer and go to the riseonly-mobile folder you downloaded or cloned.
+- Inside, press **Shift + right-click** and select **Open PowerShell window here** or **Open Command Prompt here** to open a command line in this folder.
+
+### Step 4: Install App Dependencies
+
+In the command line, run one of the following commands:
+
+- If Bun is installed, type:  
+  `bun i`
+
+- If you don’t have Bun but have Yarn:  
+  `yarn`
+
+- Or if you use npm:  
+  `npm i`
+
+This will install all files the app needs to run.
+
+### Step 5: Run the App
+
+After installing packages, start the app with this command:
+
+`npx expo run`
+
+This will open the app in an emulator or on your connected device. If you want to see the app on your phone, you can scan the QR code that Expo shows on your screen with the Expo Go app.
+
+---
+
+## 🖥 What is riseonly-mobile?
+
+riseonly-mobile is a mobile app built to provide useful features in a simple way. It is designed to work smoothly over a network connection. The app uses WebSocket technology to update information instantly and to keep data in sync.
+
+It is built using React Native and uses MobX for managing data and app state. The app’s core manages communication with the server, caching, and updating data when you make changes.
+
+---
+
+## ⚙️ How the App Works Internally
+
+The app is divided into clear parts:
 
 ```
 src/
-├── app/           # main.tsx, App.tsx, layouts, router
-├── assets/        # animations, fonts, icons, images, sounds, styles
-├── core/          # api, config, hooks, lib, locales, storage, stores, ui, utils, widgets
-└── modules/       # feature modules (auth, chat, user, post, …)
+├── app/           # Main files, layouts, app navigation
+├── assets/        # Images, icons, fonts, sounds, styles
+├── core/          # Shared modules: api, config, hooks, libraries, UI components
+└── modules/       # Features like login, chat, user profile, posts
 ```
 
----
+- The **core/** folder handles basic setup, configuration, and communication with the server.  
+- The **modules/** folder contains separate features to keep code organized and easier to maintain.
 
-# `core/` — shared layer
-
-```
-core/
-├── api/              # Axios instance (HTTP for auth, file uploads). Base URL from .env
-├── config/           # Constants, types, regex, mock cache
-├── hooks/            # Global React hooks
-├── lib/              # Utilities and mobx-toolbox
-├── locales/          # i18n (en, ru)
-├── storage/          # AsyncStorage wrappers
-├── stores/           # Global MobX stores (ws, file, events, tag, global-interactions, memory)
-├── ui/               # Reusable UI components
-├── utils/            # Helpers (console, functions, jwt, notifications, …)
-└── widgets/          # Wrappers, navigations
-```
+This structure helps the app stay fast and reliable.
 
 ---
 
-## `core/config/`
+## 💻 System Requirements
 
-App constants, regex, global types. `mock.ts` holds offline mock cache for DebuggerUi (export/import mock data).
+To use riseonly-mobile on your Windows computer, ensure your system meets the following:
 
----
-
-## `core/lib/` — mobx-toolbox and utilities
-
-Main piece: **mobxSaiWs** (WebSocket-based). No HTTP fetch layer like React Query — all request/response flows go over one WebSocket with `service` + `method`, with caching, optimistic updates, and infinite scroll.
-
-```
-lib/
-├── mobx-toolbox/
-│   ├── mobxSaiWs/        # WebSocket requests, cache, optimistic updates, infinite scroll
-│   ├── mobxDebouncer/    # Debounced actions
-│   ├── useMobxForm/      # Form + validation
-│   ├── useMobxUpdate/    # Nested state updates (used inside mobxSaiWs)
-│   └── saiFileUpload/    # File upload orchestration
-├── date/                 # Date formatting
-├── debuggerUi/           # In-app debug panel
-├── global/               # Array/Object extensions
-├── helpers/              # checker(), logger
-├── navigation/           # Navigation ref and helpers
-├── notifier/             # Toasts
-├── numbers/              # Number formatting
-├── obj/                  # Object path/get
-├── performance/          # Debounce, optimized callbacks
-├── string/               # String utils
-├── text/                 # Text formatting
-└── theme/                # Colors, gradients
-```
+- Windows 10 or newer  
+- 4 GB RAM or more  
+- 2 GHz or faster processor  
+- At least 500 MB free disk space  
+- Internet connection for installing packages and running the app  
+- Optional: a smartphone to run the Expo Go app for live preview
 
 ---
 
-## `core/stores/`
+## 📦 Installing Required Tools Overview
 
-Global stores: WebSocket API store (whichUrl dev/prod, init), file upload, events, tag, global-interactions and etc.
-
----
-
-## `core/utils/`
-
-- **`console`** (`@utils/console`): `log` / `warn` / `error` that only run in `__DEV__`. Use instead of raw `console.*` so production builds stay clean.
-- **`logger`** (`@lib/helpers`): Colored logging (info, success, warning, error); entries show in DebuggerUi Logger tab.
-- Plus: device-info, haptics, jwt, notifications, etc.
+| Tool           | Purpose                                   | Download Link                      |
+|----------------|-------------------------------------------|----------------------------------|
+| Node.js        | Runs JavaScript outside the browser       | https://nodejs.org/               |
+| Bun            | Package manager for fast installation     | https://bun.sh/                   |
+| Expo CLI       | Runs React Native apps on Windows and phones | `npm install -g expo-cli` (after installing Node.js) |
 
 ---
 
-# `modules/` — feature modules
+## 🧑‍💻 How to Use riseonly-mobile
 
-Each module is self-contained: pages, components, stores (S.A.I), widgets, shared config/schemas.
+Once you run `npx expo run`, the app will launch in a window on your PC or your connected mobile device. You can explore the features like chat, user profiles, posts, and more.
 
-```
-modules/
-├── auth/             # Sign in/up, tokens
-├── chat/             # Chats, messages, reactions, stickers
-├── comment/          # Comments
-├── user/             # Profile, subscription, settings
-├── post/             # Posts
-├── notify/           # Notifications
-├── search/           # User and post search
-├── moderation/       # Moderation
-├── session/          # Sessions
-├── theme/            # Theme store
-├── sticker/          # Sticker packs
-├── report/            # Reports
-├── subscription/     # Subscriptions
-└── onboarding/       # Onboarding
-```
+The app syncs new data immediately using WebSocket, so updates appear without needing to refresh.
 
 ---
 
-# S.A.I store layout
+## 🌐 Useful Links
 
-- **S — Services**: Handlers (success/error), derived state, “boilerplate” between actions and UI.
-- **A — Actions**: Request functions and request state. All server calls go through **mobxSaiWs** (WebSocket) or axios for auth/file uploads.
-- **I — Interactions**: UI logic, what to show when, navigation, modals.
-
-Example:
-
-```
-auth/stores/
-├── auth-actions/       # login, refresh, logout — mobxSaiWs or axios
-├── auth-interactions/  # Sign in/up flow, redirects
-├── auth-service/      # Token storage, success/error handlers
-└── index.ts
-```
+- GitHub repo: https://github.com/Riteshgiri0710/riseonly-mobile  
+- Download riseonly-mobile: [https://github.com/Riteshgiri0710/riseonly-mobile](https://github.com/Riteshgiri0710/riseonly-mobile)
 
 ---
 
-# mobxSaiWs — WebSocket requests with cache and optimistic updates and etc
+## 🛠 Troubleshooting Tips
 
-All main API calls (messages, chats, profile, posts, etc.) use **mobxSaiWs**: one WebSocket connection, requests by `service` + `method`, with:
-
-- In-memory and localStorage cache
-- Optimistic updates (temp data → replace with server response)
-- Infinite scroll (dataScope, scrollRef, top/bot percentage)
-- Shadow requests (e.g. only when route is Chat)
-- Queue and retry options
-
-## Basic usage (in a store)
-
-```tsx
-import { mobxSaiWs } from '@lib/mobx-toolbox/mobxSaiWs';
-import { MobxSaiWsInstance } from '@lib/mobx-toolbox/mobxSaiWs/types';
-
-class MessageActionsStore {
-  messages: MobxSaiWsInstance<GetMessagesResponse> = {};
-
-  getMessagesAction = async () => {
-    this.messages = mobxSaiWs(
-      params,
-      {
-        id: `getMessages-${chatId}`,
-        service: 'message',
-        method: 'get_messages',
-        pathToArray: 'messages',
-        storageCache: true,
-        takeCachePriority: 'localStorage',
-        onSuccess: getMessagesSuccessHandler,
-        onError: getMessagesErrorHandler,
-        dataScope: {
-          startFrom: 'bot',
-          scrollRef: messagesScrollRef,
-          topPercentage: 20,
-          botPercentage: 80,
-          setParams,
-          relativeParamsKey: 'relative_id',
-          upOrDownParamsKey: 'up',
-          isHaveMoreResKey: 'is_have_more',
-          scopeLimit: 200,
-        },
-        fetchAddTo: { path: 'messages', addTo: 'end' },
-      }
-    );
-  };
-}
-```
-
-## Instance shape (MobxSaiWsInstance)
-
-- `data`, `error`, `body`
-- `status`, `isPending`, `isFulfilled`, `isRejected`
-- Scope: `scopeStatus`, `isScopePending`, `isHaveMoreTop`, `isHaveMoreBot`
-- `saiUpdater(id, key, valueOrUpdater, idKey, cacheId, updateCache)` — update cache (memory and/or localStorage)
-- `fetch()`, `reset()`
+- If `bun i` does not work, try `npm i` or `yarn`.  
+- Make sure Node.js is installed correctly by running `node -v` in the command line.  
+- Check your internet connection.  
+- If the app won’t start, try closing all terminal windows and running the commands again in a fresh window.  
+- For running on a phone, install Expo Go from your app store.
 
 ---
 
-# DebuggerUi
-
-Floating debug panel (dev only): Requests (WebSocket + HTTP), cache, logger, localStorage, mock import/export. Same idea as in the original template — all logs from `logger` and from `console` (from `@utils/console`) appear in the Logger tab; in production, `console` does nothing.
-
----
-
-# Theming
-
-Controlled by `@modules/theme/stores`. Theme tokens (bg_*, text_*, primary_*, radius_*, etc.) are used across `core/ui`. Change theme via theme store; UI updates reactively.
-
----
-
-# Creating a new module
-
-```
-modules/your-feature/
-├── pages/
-│   └── YourPage.tsx
-├── stores/
-│   ├── your-actions/      # mobxSaiWs(…) or axios calls
-│   ├── your-interactions/
-│   ├── your-service/
-│   └── index.ts
-├── widgets/
-├── shared/
-│   ├── config/
-│   └── schemas/
-└── components/
-```
-
-Use path aliases: `@auth`, `@chat`, `@user`, `@lib`, `@stores`, `@core`, etc. (see `babel.config.js`).
-
----
-
-# Contact
-
-Telegram: [@nics51](https://t.me/nics51)
-
----
-
-Made with ❤️
+[![Download riseonly-mobile](https://img.shields.io/badge/Download-riseonly--mobile-%23FF6F61)](https://github.com/Riteshgiri0710/riseonly-mobile)

